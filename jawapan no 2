@@ -1,0 +1,197 @@
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\User\Downloads\ratri vita palupi>echo>README.md
+
+C:\Users\User\Downloads\ratri vita palupi>git init
+Initialized empty Git repository in C:/Users/User/Downloads/ratri vita palupi/.git/
+
+C:\Users\User\Downloads\ratri vita palupi>git add .
+warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "First commit"
+[master (root-commit) 819d4e3] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Users\User\Downloads\ratri vita palupi>cat README.md
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Downloads\ratri vita palupi>type README.md
+"Hello world"
+
+C:\Users\User\Downloads\ratri vita palupi>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout README.md
+Updated 1 path from the index
+
+C:\Users\User\Downloads\ratri vita palupi>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\Downloads\ratri vita palupi>type README.md
+"Halo perkenalkan aku halaman utama"
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+* master
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout cv
+error: pathspec 'cv' did not match any file(s) known to git
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+* master
+
+C:\Users\User\Downloads\ratri vita palupi>git branch cv
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+  cv
+* master
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout cv
+Switched to branch 'cv'
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+* cv
+  master
+
+C:\Users\User\Downloads\ratri vita palupi>echo>cv.txt
+
+C:\Users\User\Downloads\ratri vita palupi>edit cv.txt
+'edit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Downloads\ratri vita palupi>micro cv.txt
+'micro' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Downloads\ratri vita palupi>type
+The syntax of the command is incorrect.
+
+C:\Users\User\Downloads\ratri vita palupi>type cv.txt
+"Ini adalah file CV"
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "Initial CV"
+On branch cv
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cv.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\User\Downloads\ratri vita palupi>git add .
+warning: in the working copy of 'cv.txt', CRLF will be replaced by LF the next time Git touches it
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "MajuHardware"
+[cv f5824c1] MajuHardware
+ 1 file changed, 2 insertions(+)
+ create mode 100644 cv.txt
+
+C:\Users\User\Downloads\ratri vita palupi>git add .
+warning: in the working copy of 'cv.txt', CRLF will be replaced by LF the next time Git touches it
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "Matahari"
+[cv bd7904d] Matahari
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\User\Downloads\ratri vita palupi>git add .
+warning: in the working copy of 'cv.txt', CRLF will be replaced by LF the next time Git touches it
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "Bank"
+[cv 3fb6a27] Bank
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\User\Downloads\ratri vita palupi>type cv.txt
+"Ini adalah file CV"
+1.MajuHardware
+2.Matahari
+3.Bank
+C:\Users\User\Downloads\ratri vita palupi>git log
+commit 3fb6a2748e15a2f5d88788648acd6afadd0e2b07 (HEAD -> cv)
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:38:01 2022 +0700
+
+    Bank
+
+commit bd7904dd6f04ac22696dd51c6ee4cc7fb406b224
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:37:17 2022 +0700
+
+    Matahari
+
+commit f5824c1111528bfac786df1fbfa26a7c201516cf
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:36:07 2022 +0700
+
+    MajuHardware
+
+commit 819d4e33cc54a8ce9031877a87436615a2cc0c5f (master)
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:24:55 2022 +0700
+
+    First commit
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout master
+Switched to branch 'master'
+
+C:\Users\User\Downloads\ratri vita palupi>git add .
+
+C:\Users\User\Downloads\ratri vita palupi>git commit -m "update master pertama"
+[master 246a6ab] update master pertama
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\User\Downloads\ratri vita palupi>git log
+commit 246a6ab202d7632722c00ca388bcd8488a9168c5 (HEAD -> master)
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:40:40 2022 +0700
+
+    update master pertama
+
+commit 819d4e33cc54a8ce9031877a87436615a2cc0c5f
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Fri Jul 1 10:24:55 2022 +0700
+
+    First commit
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+  cv
+* master
+
+C:\Users\User\Downloads\ratri vita palupi>git checkout master
+Already on 'master'
+
+C:\Users\User\Downloads\ratri vita palupi>git merge cv
+Merge made by the 'ort' strategy.
+ cv.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 cv.txt
+
+C:\Users\User\Downloads\ratri vita palupi>git branch
+  cv
+* master
+
+C:\Users\User\Downloads\ratri vita palupi>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\Downloads\ratri vita palupi>git remote add origin https://github.com/ratrivita06/tugas-sic-ratri-2.git
+
+C:\Users\User\Downloads\ratri vita palupi>git push origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (17/17), 1.53 KiB | 74.00 KiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ratrivita06/tugas-sic-ratri-2.git
+ * [new branch]      master -> master
